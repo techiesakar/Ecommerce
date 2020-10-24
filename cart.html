@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart - TechieSakar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/techiesakar.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" width="125px" alt="" />
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html">
+          <img src="img/cart.png" width="30px" height="30px" />
+        </a>
+        <img
+          src="img/menu.png"
+          class="menu-icon"
+          alt=""
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <!-- ----------cart items details---------- -->
+    <div class="container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/buy-1.jpg" alt="" />
+              <div>
+                <p>Red Printed T-Shirt</p>
+                <small>Price: $45.00</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$45.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/buy-2.jpg" alt="" />
+              <div>
+                <p>Black Shoe</p>
+                <small>Price: $40.00</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$40.00</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="img/buy-3.jpg" alt="" />
+              <div>
+                <p>Trouser</p>
+                <small>Price: $34.00</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>$34.00</td>
+        </tr>
+      </table>
+      <div class="total-price">
+          <table>
+              <tr>
+                  <td>Subtotal</td>
+                  <td>$119.00</td>
+              </tr>
+              <tr class="border-bottom">
+                <td>Tax</td>
+                <td>$20.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$139.00</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+    <!-- ----------Footer---------- -->
+    <div class="footer footer-2">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and iOS mobile phone</p>
+            <div class="app-logo">
+              <a href=""><img src="img/play-store.png" /></a>
+              <a href=""><img src="img/app-store.png" /></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="img/logo-white.png" alt="" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="">Coupons</a></li>
+              <li><a href="">Blog Post</a></li>
+              <li><a href="">Return Policy</a></li>
+              <li><a href="">Join Affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 - TechieSakar</p>
+      </div>
+    </div>
+    <!-- ---------js for Toggle Menu ------------ -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
